@@ -548,9 +548,10 @@
 
                 // Get group source from Ajax / JsonP
                 if (this.options.source[group].url) {
-                    if (!this.requests[group]) {
+                    //WORKAROUND
+                    //if (!this.requests[group]) {
                         this.requests[group] = this.generateRequestObject(group);
-                    }
+                    //}
                 }
             }
 
